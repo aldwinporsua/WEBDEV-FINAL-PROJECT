@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNowPH</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>WeatherNowPH</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        <button onclick="getWeather()">Search</button>
+        <button onclick="resetWeather()">Reset</button> 
+        <button onclick="getWeatherForCurrentLocation()">My Location</button>
+
+        <div id="search-result">
+            <img id="weather-icon" alt="Weather Icon"> 
+            <div id="temp-div"></div>
+            <div id="weather-info"></div>
+        </div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+
+    <div id="header-cards">
+        <div class="weather-card" id="card1">
+            <h3 id="city1-name"></h3>
+            <p id="city1-temp"></p>
+            <img id="city1-icon" alt="Weather Icon">
+        </div>
+        <div class="weather-card" id="card2">
+            <h3 id="city2-name"></h3>
+            <p id="city2-temp"></p>
+            <img id="city2-icon" alt="Weather Icon">
+        </div>
+        <div class="weather-card" id="card3">
+            <h3 id="city3-name"></h3>
+            <p id="city3-temp"></p> 
+            <img id="city3-icon" alt="Weather Icon">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
